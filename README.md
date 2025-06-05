@@ -1,7 +1,13 @@
+-----
+# 先看这里！！
+
 这是复刻版，带有IPv6地址功能，和大量日志输出。管理员运行的wireguard不一定会有图标，可以检查任务管理器。
 
 如果想运行下检查输出，可以先关闭win11的安全策略，调整为允许本地和签名的远程脚本。【需要管理员权限】
 `Set-ExecutionPolicy RemoteSigned -Scope LocalMachine`
+
+-----
+以下是fork内容。
 
 # Windows-Wireguard-Watchdog
 
