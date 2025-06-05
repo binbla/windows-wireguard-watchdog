@@ -6,6 +6,12 @@
 如果想运行下检查输出，可以先关闭win11的安全策略，调整为允许本地和签名的远程脚本。【需要管理员权限】
 `Set-ExecutionPolicy RemoteSigned -Scope LocalMachine`
 
+同时需要转换脚本的编码，不然utf-8会在默认的windows下乱码。
+
+转换命令也很简单，自己改一下文件名就行
+
+`Get-Content "输入文件.txt" -Encoding UTF8 | Out-File "输出文件.txt" -Encoding Default`
+
 -----
 以下是fork内容。
 
