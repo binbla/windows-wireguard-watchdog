@@ -1,3 +1,5 @@
+这是复刻版，带有IPv6选择，和大量日志输出。管理员运行的wireguard不一定会有图标，可以检查任务管理器。
+
 # Windows-Wireguard-Watchdog
 
 > 背景：Wireguard服务端是动态IP，Wireguard客户端配置的服务端地址是域名 Endpoint = xx.xxx.com:51820，写的DDNS脚本检测到IP变更会自动更新域名解析。每次宽带重拨IP就会变更，由于客户端重连使用的不是域名而是第一次连接时解析的域名对应的IP地址，导致一直连接不上服务端。
